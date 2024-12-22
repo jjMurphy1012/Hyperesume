@@ -1,0 +1,229 @@
+.template3 {
+    max-width: 8.27in;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.template3-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+}
+
+.header-content {
+    max-width: 100%;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+    color: #13679B;
+}
+
+.contact-line {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.template3-content h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 1px solid #13679B;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    color: #13679B;
+}
+
+.template3-content section {
+    margin-bottom: 1.5rem;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.school {
+    font-weight: bold;
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.exp-header {
+    margin-bottom: 0.5rem;
+}
+
+.role-company {
+    font-weight: bold;
+}
+
+.exp-date-location {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.responsibilities {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+}
+
+.responsibilities li {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* Technical Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-category h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.skill-category p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 1rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.project-name {
+    font-weight: bold;
+}
+
+.project-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+}
+
+/* Certifications Section */
+.certification-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.cert-name {
+    font-weight: bold;
+}
+
+.cert-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media print {
+    .template3 {
+        padding: 0;
+    }
+    
+    .template-actions {
+        display: none;
+    }
+}
+
+/* Add these print styles at the end of your Template3.css file */
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .template-container {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .template3 {
+        padding: 20px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        width: 210mm;
+    }
+
+    .template3-header {
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #1767A3 !important;
+        padding-bottom: 0.75rem;
+    }
+
+    .template3-content {
+        padding: 0 20px;
+    }
+
+    /* Ensure content sections break appropriately */
+    .education-item,
+    .experience-item,
+    .project-item,
+    .certification-item {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure colors print correctly */
+    .name {
+        color: #1767A3 !important;
+    }
+
+    .template3-content h2 {
+        border-bottom: 1px solid #1767A3 !important;
+        color: #1767A3 !important;
+    }
+
+    /* Hide non-printable elements */
+    .template-actions,
+    button,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Ensure consistent fonts and colors */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

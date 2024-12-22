@@ -1,0 +1,87 @@
+.template3-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #1767A3;
+    padding-bottom: 1rem;
+}
+
+.header-content {
+    max-width: 100%;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+    color: #1767A3;
+}
+
+.contact-line {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.2;
+}
+
+/* Add these print styles at the end of your PreviewMode.css file */
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .template3 {
+        padding: 20px;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        width: 210mm;
+    }
+
+    .template3-header {
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #1767A3 !important;
+        padding-bottom: 0.75rem;
+    }
+
+    .template3-content {
+        padding: 0 20px;
+    }
+
+    /* Skills grid adjustments for print */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        page-break-inside: avoid;
+    }
+
+    /* Ensure section breaks are clean */
+    section {
+        page-break-inside: avoid;
+    }
+
+    /* Maintain color scheme in print */
+    .name,
+    .template3-content h2 {
+        color: #1767A3 !important;
+    }
+
+    .template3-content h2 {
+        border-bottom: 1px solid #1767A3 !important;
+    }
+
+    /* Ensure consistent font rendering */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

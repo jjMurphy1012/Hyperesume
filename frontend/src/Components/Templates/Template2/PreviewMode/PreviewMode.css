@@ -1,0 +1,188 @@
+/* PreviewMode.css */
+.template2 {
+    padding: 2rem;
+    max-width: 8.27in;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+.template2-header {
+    margin-bottom: 2.5rem;
+}
+
+.name-title {
+    margin-bottom: 1.2rem;
+}
+
+.name {
+    font-size: 2.5rem;  /* Increased from 2rem */
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;  /* Added gap for better spacing */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;  /* Increased from 1rem */
+}
+
+/* Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2.5rem;  /* Increased from 2rem */
+}
+
+.left-column {
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+}
+
+.right-column {
+    padding-left: 1rem;
+}
+
+/* Section Headers */
+.template2 h2 {
+    font-size: 1.4rem;  /* Increased from 1.2rem */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 1.5rem;  /* Increased from 1rem */
+}
+
+.school {
+    font-weight: 600;  /* Increased from 500 */
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;  /* Increased from 1.1rem */
+}
+
+.degree {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;  /* Increased from 1rem */
+}
+
+.graduation-date {
+    color: #666;
+    font-size: 1.1rem;  /* Increased from 1rem */
+    margin: 0;
+}
+
+/* Skills Section */
+.template2-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.template2-skills li {
+    margin-bottom: 0.7rem;  /* Increased from 0.5rem */
+    font-size: 1.1rem;  /* Increased from 1rem */
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 2rem;  /* Increased from 1.5rem */
+}
+
+.role-company {
+    font-weight: 600;  /* Increased from 500 */
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;  /* Increased from 1.1rem */
+}
+
+.exp-location-date {
+    color: #666;
+    font-size: 1.1rem;  /* Increased from 1rem */
+    margin: 0;
+}
+
+.responsibilities {
+    margin: 0.7rem 0;  /* Increased from 0.5rem */
+    padding-left: 1.2rem;
+}
+
+.responsibilities li {
+    margin-bottom: 0.5rem;  /* Increased from 0.25rem */
+    font-size: 1.1rem;  /* Increased from 1rem */
+    line-height: 1.5;
+}
+
+/* Print styles */
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    .template2 {
+        padding: 40px;  /* Increased from 30px */
+        width: 210mm;
+    }
+
+    /* Header print styles */
+    .name {
+        font-size: 36px !important;  /* Increased from 32px */
+    }
+
+    .contact-item {
+        font-size: 16px !important;  /* Increased from 14px */
+    }
+
+    /* Section headers print styles */
+    .template2 h2 {
+        font-size: 20px !important;  /* Increased from 18px */
+        margin-bottom: 16px;
+    }
+
+    /* Main content print styles */
+    .school {
+        font-size: 18px !important;  /* Increased from 16px */
+    }
+
+    .degree, 
+    .graduation-date,
+    .exp-location-date,
+    .responsibilities li,
+    .template2-skills li,
+    .project-description,
+    .certification-item {
+        font-size: 16px !important;  /* Increased from 14px */
+    }
+
+    .role-company {
+        font-size: 18px !important;  /* Increased from 16px */
+    }
+
+    /* Spacing adjustments */
+    .experience-item {
+        margin-bottom: 20px;
+    }
+
+    .education-item {
+        margin-bottom: 16px;
+    }
+
+    .responsibilities li {
+        margin-bottom: 6px;
+    }
+
+    .template2-skills li {
+        margin-bottom: 8px;
+    }
+}
